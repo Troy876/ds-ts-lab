@@ -1,5 +1,3 @@
-// (Optional) Change the names below to your friends.
-
 interface Friend {
     name: string;
     phone: string;
@@ -58,7 +56,13 @@ const colleague3: Colleague = {
         extension: 125,
     },
 };
-const colleagues = {
+
+interface ColleagueHistory {
+    current: Colleague[];
+    former: Colleague[];
+}
+
+const colleagues: ColleagueHistory = {
     current: [colleague1, colleague2, colleague3],
     former: [],
 };
